@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+chroma_store/
+chat_history.db
+data/uploads/*
+.streamlit/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
