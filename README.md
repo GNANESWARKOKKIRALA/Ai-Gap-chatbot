@@ -1,4 +1,4 @@
-# 🤖 AI GAP Chatbot — LLaMA 3.3 70B via Groq
+# 🤖 AI RAG Chatbot — LLaMA 3.3 70B via Groq
 
 A production-grade **Retrieval-Augmented Generation (RAG)** chatbot built with:
 - 🦙 **LLaMA 3.3 70B** — powerful open-source LLM
