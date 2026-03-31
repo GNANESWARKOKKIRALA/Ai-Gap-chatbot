@@ -1,5 +1,5 @@
 """
-app.py — Streamlit UI for  AI GAP-Chatbot Chatbot (Groq + LLaMA 3.3 70B + ChromaDB + SQLite)
+app.py — Streamlit UI for  AI RAG Chatbot (Groq + LLaMA 3.3 70B + ChromaDB + SQLite)
 """
 import os
 import tempfile
@@ -23,7 +23,7 @@ from utils.helpers import (
 init_db()
 
 st.set_page_config(
-    page_title=" AI GAP-Chatbot — LLaMA 3.3 via Groq",
+    page_title=" AI RAG Chatbot — LLaMA 3.3 via Groq",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -132,7 +132,7 @@ session_id = st.session_state.session_id
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🤖  AI GAP-Chatbot")
+    st.markdown("## 🤖  AI RAG Chatbot")
     st.markdown("**Powered by LLaMA 3.3 70B + Groq**")
     st.divider()
 
@@ -233,7 +233,7 @@ st.markdown("""
 <div class="chat-header">
   <div style="font-size:2rem;"></div>
   <div>
-    <h1>🤖AI GAP-Chatbot</h1>
+    <h1>🤖AI RAG Chatbot</h1>
     <p>Ask questions about your documents · Powered by LLaMA 3.3 70B via Groq API</p>
   </div>
 </div>
@@ -253,7 +253,7 @@ if not st.session_state.messages:
 
     with st.chat_message("assistant", avatar="😎"):
         st.markdown(
-            "👋 **Welcome!** I'm your AI GAP-Chatbot powered by **LLaMA 3.3 70B via Groq**.\n\n"
+            "👋 **Welcome!** I'm your AI RAG Chatbot powered by **LLaMA 3.3 70B via Groq**.\n\n"
             "📂 Upload documents in the sidebar (PDF, DOCX, TXT, CSV) and ask me anything about them.\n\n"
             "⚡ Groq gives **ultra-fast** responses — try it!"
         )
